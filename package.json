@@ -4,12 +4,14 @@
   "description": "Rename files app",
   "main": "app/js/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . RenameFiles --platform=win32 --arch=x64 --ignore=.gitignore --ignore=.editorconfig --ignore=node_modules"
   },
   "keywords": [],
   "author": "Rafael R. Ramos R.",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^12.0.6"
+    "electron": "^12.0.6",
+    "electron-packager": "^15.2.0"
   }
 }
