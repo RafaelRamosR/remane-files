@@ -11,12 +11,13 @@
 </head>
 
 <body>
-  <h1>Hello World!</h1>
-  <p>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-  </p>
+  <h1>Rename Files</h1>
+  <form autocomplete="off" id="form">
+    <input id="location" type="url" placeholder="Ubicación" required autofocus>
+    <button type="submit">
+      Renombrar
+    </button>
+  </form>
 </body>
-
+<script src="js/renderer.js"></script>
 </html>
